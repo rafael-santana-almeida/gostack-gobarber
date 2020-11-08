@@ -18,7 +18,7 @@ sessionsRouter.post('/', async (request, response) => {
     const userAuthenticated = {
       id: user.id,
       name: user.name,
-      email: user.email
+      email: user.email,
     };
 
     return response.json({ userAuthenticated, token });
