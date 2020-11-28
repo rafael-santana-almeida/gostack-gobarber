@@ -27,8 +27,10 @@
     "rules": {
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
+      "react/jsx-props-no-spreading": "off",
       "react/jsx-one-expression-per-line": "off",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+      "react/prop-types": "off",
       "import/prefer-default-export": "off",
       "no-use-before-define": "off",
       "camelcase": "off",
@@ -46,6 +48,10 @@
           "ts": "never",
           "tsx": "never"
         }
+      ],
+      "import/no-unresolved": [
+        2,
+        { "caseSensitive": false }
       ],
       "prettier/prettier": [
         "error",
