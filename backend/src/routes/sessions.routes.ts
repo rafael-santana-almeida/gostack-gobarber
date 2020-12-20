@@ -14,13 +14,18 @@ sessionsRouter.post('/', async (request, response) => {
     password,
   });
 
+  const { id, name, avatar, created_at, updated_at } = user;
+
   const userAuthenticated = {
-    id: user.id,
-    name: user.name,
-    email: user.email,
+    id,
+    name,
+    avatar,
+    email,
+    created_at,
+    updated_at,
   };
 
-  return response.json({ userAuthenticated, token });
+  return response.json({ user: userAuthenticated, token });
 });
 
 export default sessionsRouter;
