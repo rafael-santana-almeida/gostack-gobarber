@@ -39,6 +39,8 @@
           "custom": "ignore"
         }
       ],
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/ban-types": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
