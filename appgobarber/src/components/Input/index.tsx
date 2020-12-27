@@ -52,7 +52,7 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
       ref: inputValueRef.current,
       path: 'value',
     });
-  }, [fieldName, inputValueRef]);
+  }, [fieldName, inputValueRef, registerField]);
 
   useImperativeHandle(ref, () => ({
     focus() {
@@ -61,7 +61,7 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
   }));
 
   return (
-    <Container isFocused={isFocused}>
+    <Container isFocused={isFocused} isErrored={!!error}>
       <Icon
         name={icon}
         size={20}
