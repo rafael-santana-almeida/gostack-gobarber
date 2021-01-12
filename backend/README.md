@@ -16,3 +16,15 @@
 
 - O link enviado por e-mail para resetar senha, deve expirar em 2h;
 - O usuário precisa confirmar a nova senha ao resetar sua senha;
+
+# Atualização do perfil
+
+**RF**
+
+- O usuário deve poder atualizar seu nome, email e senha;
+
+**RN**
+
+- O usuário não pode alterar seu email para um email já utilizado;
+- Para atualizar sua senha, o usuário deve informar a senha antiga;
+- Para atualizar sua senha, o usuário precisa confirmar a nova senha;
