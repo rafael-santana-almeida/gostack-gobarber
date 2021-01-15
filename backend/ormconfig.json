@@ -23,7 +23,7 @@
     "host": "localhost",
     "port": 27017,
     "database": "gobarber",
-    "userUnifiedTopology": true,
+    "useUnifiedTopology": true,
     "entities": [
       "./src/modules/**/infra/typeorm/schemas/*.ts"
     ]
