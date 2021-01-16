@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-
 import { container } from 'tsyringe';
+import { classToClass } from 'class-transformer';
 
 import AuthenticationsUserService from '@modules/users/services/AuthenticateUserService';
 
@@ -15,17 +15,6 @@ export default class SessionsController {
       password,
     });
 
-    const { id, name, avatar, created_at, updated_at } = user;
-
-    const userAuthenticated = {
-      id,
-      name,
-      avatar,
-      email,
-      created_at,
-      updated_at,
-    };
-
-    return response.json({ user: userAuthenticated, token });
+    return response.json({ user: classToClass(user), token });
   }
 }
