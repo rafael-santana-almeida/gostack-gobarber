@@ -29,6 +29,7 @@
     "import/no-extraneous-dependencies": "off",
     "camelcase": "off",
     "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/ban-types": "off",
     "no-useless-constructor": "off",
     "@typescript-eslint/no-unused-vars": ["error", {
       "argsIgnorePattern": "_"
