@@ -40,6 +40,7 @@ class AppointmentsRepository implements IAppointmetsRepository {
             `to_char(${datateFieldName}, 'MM-YYYY') = '${parsedMonth}-${year}'`,
         ),
       },
+      relations: ['users'],
     });
     return appointments;
   }
